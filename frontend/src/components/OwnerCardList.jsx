@@ -32,7 +32,12 @@ const OwnerCardList = ({ owners, setOwners }) => {
                 <strong>{owner.name}</strong>
                 <p>{owner.contact_email}</p>
 
-                <button onClick={() => deleteOwner(owner.id)}>Delete</button>
+                <button
+                  id="delete-button"
+                  onClick={() => deleteOwner(owner.id)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))
