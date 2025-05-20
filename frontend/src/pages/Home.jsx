@@ -37,10 +37,10 @@ const Home = () => {
 
   const deleteProperties = (id) => {
     api
-      .delete(`/api/notes/delete/${id}/`)
+      .delete(`/api/properties/${id}/`)
       .then((res) => {
         if (res.status === 204) alert("Property Deleted.");
-        else alert("Failed to delete note. ");
+        else alert("Failed to delete. ");
       })
       .catch((error) => alert(error));
     getProperties();
@@ -78,20 +78,10 @@ const Home = () => {
       .catch((err) => alert(err));
   };
 
-  // LOGOUT FUNCTION
-
-  const handleLogout = () => {
-    localStorage.removeItem("access");
-    localStorage.removeItem("refresh");
-    navigate("/login");
-  };
-
   return (
     <div className="home-container">
       <Sidebar />
-      {/* Property list over on the side (unchanged) */}
-      <OwnerCardList owners={owners} />
-      {/* === New card wrapper around the form === */}
+      <OwnerCardList owners={owners} setOwners={setOwners} />
     </div>
   );
 };

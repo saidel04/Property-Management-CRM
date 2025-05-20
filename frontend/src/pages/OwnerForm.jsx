@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import LoginForm from "../components/LoginForm";
 import { useNavigate } from "react-router-dom";
 import api from "../api";
-import "../styles/Login.css";
+import "../styles/OwnerForm.css";
+import Sidebar from "../components/Sidebar";
 
 const OwnerForm = () => {
   const navigate = useNavigate();
@@ -33,6 +33,7 @@ const OwnerForm = () => {
 
   return (
     <div className="owner-form">
+      <Sidebar />
       <form onSubmit={createOwners} className="owner-form">
         <input
           type="text"
@@ -55,7 +56,6 @@ const OwnerForm = () => {
           onChange={(e) => set_contact_phone(e.target.value)}
         />
 
-        {/* Use the existing .home-button styling */}
         <input type="submit" value="Submit" className="home-button" />
       </form>
     </div>

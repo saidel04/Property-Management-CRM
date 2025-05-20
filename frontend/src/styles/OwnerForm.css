@@ -1,0 +1,84 @@
+.owner-form {
+  display: flex;
+  min-height: 100vh;
+
+  align-items: center;
+  background: #ffffff;
+  color: #000;
+}
+
+.owner-form > .sidebar {
+  flex: 0 0 260px;
+}
+
+.owner-form form {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+
+  padding: 2rem 2.5rem;
+}
+
+/* INPUTS */
+.owner-form input[type="text"],
+.owner-form input[type="email"],
+.owner-form input[type="tel"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+
+  background: #ffffff;
+  border: 1px solid #df5c5c;
+  border-radius: 40px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.owner-form input:focus {
+  outline: none;
+  border-color: #df5c5c;
+  box-shadow: 0 0 0 3px rgba(223, 92, 92, 0.25);
+}
+
+.home-button {
+  width: 30%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: #df5c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.home-button:hover {
+  background: #c74f4f;
+}
+.home-button:active {
+  transform: scale(0.98);
+}
+.home-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* SMALL-SCREEN STACKING */
+@media (max-width: 768px) {
+  .owner-form {
+    flex-direction: column;
+  }
+  .owner-form > .sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  .owner-form form {
+    margin: 2rem auto;
+  }
+}

@@ -1,44 +1,41 @@
-.property-card-container {
-    margin-top: 2rem;
-    max-height: 400px;
-    overflow-y: auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.owner-card-container {
+  margin-top: 2rem;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #515e83;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.property-card-scroll {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.owner-card-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.property-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.75rem;
-    border-radius: 8px;
-    background-color: #eaf2e3; /* honeydew */
+.owner-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
 }
 
-.property-icon {
-    font-size: 1.5rem;
-    color: #f25757; /* bittersweet */
+.owner-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.property-info {
-    display: flex;
-    flex-direction: column;
+.owner-info strong {
+  font-size: 1rem;
+  color: #ffffff;
 }
 
-.property-info strong {
-    font-size: 1rem;
-    color: #333;
+.owner-info p {
+  font-size: 0.9rem;
+  color: #ffffff;
 }
-
-.property-info p {
-    font-size: 0.9rem;
-    color: #555;
+.owner-card-container h2 {
+  color: #df5c5c;
 }
