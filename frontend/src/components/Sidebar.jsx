@@ -35,7 +35,7 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div className="sidebar-item" onClick={() => navigate("/properties/")}>
+      <div className="sidebar-item" onClick={() => navigate("/property-form/")}>
         <FaHome className="sidebar-icon" />
         <span>Add Property</span>
       </div>

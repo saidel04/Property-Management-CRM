@@ -1,6 +1,7 @@
 .owner-card-container {
   margin-top: 2rem;
   max-height: 400px;
+  min-width: 200px;
   overflow-y: auto;
   background-color: #515e83;
   border-radius: 10px;

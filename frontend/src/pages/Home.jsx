@@ -12,12 +12,6 @@ const Home = () => {
   const [properties, setProperties] = useState([]);
   const [owners, setOwners] = useState([]);
 
-  // PROPERTY VARIABLES
-  const [propertyName, setPropertyName] = useState("");
-  const [address, setAddress] = useState("");
-  const [propertyType, setPropertyType] = useState("");
-  const [numUnits, setNumUnits] = useState("");
-
   useEffect(() => {
     getProperties();
     getOwners();

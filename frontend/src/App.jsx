@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import OwnerForm from "./pages/OwnerForm";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PropertyForm from "./pages/PropertyForm";
 
 function Logout() {
   localStorage.clear();
@@ -36,6 +37,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <OwnerForm />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/property-form"
+            element={
+              <ProtectedRoute>
+                <PropertyForm />
               </ProtectedRoute>
             }
           />
