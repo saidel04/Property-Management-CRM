@@ -1,0 +1,44 @@
+.property-card-container {
+    margin-top: 2rem;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.property-card-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.property-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background-color: #eaf2e3; /* honeydew */
+}
+
+.property-icon {
+    font-size: 1.5rem;
+    color: #f25757; /* bittersweet */
+}
+
+.property-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-info strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+.property-info p {
+    font-size: 0.9rem;
+    color: #555;
+}

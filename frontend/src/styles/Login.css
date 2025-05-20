@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #eaf2e3; /* Honeydew */
+    font-family: "Poppins", sans-serif;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    background-color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-input::placeholder {
+    color: #888;
+}
+
+.form-button {
+    padding: 0.75rem;
+    background-color: #f25757; /* Bittersweet */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #d14646;
+}
+
+.form-link-button {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #f25757; /* Bittersweet */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.form-link-button:hover {
+    color: #d14646;
+    text-decoration: underline;
+}
