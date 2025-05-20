@@ -12,7 +12,7 @@ const PropertyForm = () => {
   const [address, setAddress] = useState("");
   const [propertyType, setPropertyType] = useState("");
   const [numUnits, setNumUnits] = useState("");
-  const [ownerId, setOwnerId] = useState(null);
+  const [ownerId, setOwnerId] = useState("");
 
   const [owners, setOwners] = useState([]);
 
@@ -31,7 +31,7 @@ const PropertyForm = () => {
         address,
         property_type: propertyType,
         num_units: Number(numUnits),
-        owner: ownerId,
+        owner_id: ownerId,
       })
       .then((res) => {
         if (res.status === 201) {
@@ -60,9 +60,12 @@ const PropertyForm = () => {
           onChange={(e) => setAddress(e.target.value)}
         />
         <select
-          value={propertyType || ""}
+          value={propertyType}
           onChange={(e) => setPropertyType(e.target.value)}
         >
+          <option value="" disabled>
+            Select property type…
+          </option>
           <option value="Apartment">Apartment</option>
           <option value="House">House</option>
           <option value="Commercial">Commercial</option>
@@ -76,10 +79,10 @@ const PropertyForm = () => {
         />
 
         {/* owner dropdown */}
-        <select
-          value={ownerId || ""}
-          onChange={(e) => setOwnerId(e.target.value)}
-        >
+        <select value={ownerId} onChange={(e) => setOwnerId(e.target.value)}>
+          <option value="" disabled>
+            Select owner…
+          </option>
           {owners.map((o) => (
             <option key={o.id} value={o.id}>
               {o.name}

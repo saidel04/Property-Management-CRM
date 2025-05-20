@@ -4,6 +4,7 @@ import "../styles/Home.css";
 import Sidebar from "../components/Sidebar";
 import api from "../api";
 import OwnerCardList from "../components/OwnerCardList";
+import PropertyCardList from "../components/PropertyCardList";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -76,6 +77,7 @@ const Home = () => {
     <div className="home-container">
       <Sidebar />
       <OwnerCardList owners={owners} setOwners={setOwners} />
+      <PropertyCardList properties={properties} setProperties={setProperties} />
     </div>
   );
 };

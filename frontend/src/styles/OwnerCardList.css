@@ -1,7 +1,9 @@
 .owner-card-container {
   margin-top: 2rem;
   max-height: 400px;
-  min-width: 200px;
+  height: 400px;
+  width: 250px;
+
   overflow-y: auto;
   background-color: #515e83;
   border-radius: 10px;
@@ -43,7 +45,7 @@
 }
 
 .owner-card-container button {
-  width: 50%;
+  width: 80px;
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: 600;

@@ -28,9 +28,9 @@ const OwnerCardList = ({ owners, setOwners }) => {
           owners.map((owner) => (
             <div className="owner-card" key={owner.id}>
               <div className="owner-info">
-                <strong>ID: {owner.id}</strong>
                 <strong>{owner.name}</strong>
                 <p>{owner.contact_email}</p>
+                <p>{owner.contact_phone}</p>
 
                 <button
                   id="delete-button"
