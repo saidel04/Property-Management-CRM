@@ -27,6 +27,10 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
+      <div className="header" onClick={() => navigate("/")}>
+        <h1>Rent Roster</h1>
+      </div>
+
       <h2 className="sidebar-title">Quick Actions</h2>
 
       <div className="sidebar-header">
