@@ -7,6 +7,7 @@ import {
   FaTools,
   FaSignOutAlt,
   FaBriefcase,
+  FaKey,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "../styles/Sidebar.css";
@@ -44,9 +45,14 @@ const Sidebar = () => {
         <span>Add Property</span>
       </div>
 
-      <div className="sidebar-item" onClick={() => navigate("/tenants/new")}>
+      <div className="sidebar-item" onClick={() => navigate("/tenant-form/")}>
         <FaUsers className="sidebar-icon" />
         <span>Add Tenant</span>
+      </div>
+
+      <div className="sidebar-item" onClick={() => navigate("/unit-form/")}>
+        <FaKey className="sidebar-icon" />
+        <span>Add Units</span>
       </div>
 
       <div className="sidebar-item" onClick={() => navigate("/payments/new")}>

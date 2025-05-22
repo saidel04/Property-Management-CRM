@@ -44,7 +44,20 @@
   color: #fff;
 }
 
-.owner-card-container button {
+.delete-button {
+  width: 80px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: #df5c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.update-button {
   width: 80px;
   padding: 0.5rem;
   font-size: 1rem;

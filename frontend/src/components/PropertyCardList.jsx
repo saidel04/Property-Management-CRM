@@ -3,7 +3,6 @@ import "../styles/OwnerCardList.css";
 import api from "../api";
 
 const PropertyCardList = ({ properties, setProperties }) => {
-  /* delete handler */
   const deleteProperty = (id) => {
     api
       .delete(`/api/properties/${id}/`)
@@ -25,20 +24,20 @@ const PropertyCardList = ({ properties, setProperties }) => {
         {properties.length === 0 ? (
           <p>No properties found.</p>
         ) : (
-          /* ✅ use singular variable name */
           properties.map((property) => (
             <div className="owner-card" key={property.id}>
               <div className="owner-info">
-                <strong>ID: {property.id}</strong>
                 <strong>{property.address}</strong>
 
-                {/* nested owner object → use ?. in case owner is null */}
                 <p>
                   Owner:&nbsp;
                   {property.owner ? property.owner.name : "—"}
                 </p>
 
-                <button onClick={() => deleteProperty(property.id)}>
+                <button
+                  className="delete-button"
+                  onClick={() => deleteProperty(property.id)}
+                >
                   Delete
                 </button>
               </div>

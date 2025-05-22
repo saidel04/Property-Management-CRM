@@ -33,7 +33,7 @@ const OwnerCardList = ({ owners, setOwners }) => {
                 <p>{owner.contact_phone}</p>
 
                 <button
-                  id="delete-button"
+                  className="delete-button"
                   onClick={() => deleteOwner(owner.id)}
                 >
                   Delete
